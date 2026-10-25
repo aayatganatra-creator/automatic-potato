@@ -1,7 +1,7 @@
 import streamlit as st
 from openai import OpenAI
 
-st.title("My AI Chatbot")
+st.title("Aabans freaky ai chatbot")
 
 client=OpenAI(api_key=st.secrets["GROQ_API_KEY"],base_url="https://api.groq.com/openai/v1")#
 #This /|\ is like giving our chatbot a phone connection so it can talk to the AI server,client is the object we use to send messages to the ai (grok)
