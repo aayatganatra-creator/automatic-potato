@@ -3,7 +3,7 @@ from openai import OpenAI
 
 st.title("My AI Chatbot")
 
-client=OpenAI(api_key=st.secrets["groq_api_key"],base_url="https://api.groq.com/openai/v1")#
+client=OpenAI(api_key=st.secrets["GROQ_API_KEY"],base_url="https://api.groq.com/openai/v1")#
 #This /|\ is like giving our chatbot a phone connection so it can talk to the AI server,client is the object we use to send messages to the ai (grok)
 #      |
 if "memory" not in st.session_state:#st.session_state stores the information during the active streamlit session,if the word memory is not in the session state then it makes an empty list to store the things u type
